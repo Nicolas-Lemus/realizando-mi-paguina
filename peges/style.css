@@ -17,25 +17,24 @@ img{
     max-width: 100%;
 }
 /*areas*/
-
 /*SCROLL*/
-.scroll{
+#scroll{
     padding-top:200px;
     width:100%;
     margin:0;
     overflow: hidden;
 }
-.scroll ul{
+#scroll ul{
     display:flex;
     width:420%;
     animation: cambio 20s infinite;
     animation-direction: alternate;
 }
-.scroll ul li{
+#scroll ul li{
     list-style: none;
     width: 100%;
 }
-.scroll  img{
+#scroll  img{
     width: 100%;
     height:400px;
 }
