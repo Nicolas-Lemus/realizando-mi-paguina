@@ -17,41 +17,10 @@ img{
     max-width: 100%;
 }
 /*areas*/
-.grid__area{
-    display: grid;
-    grid-template-columns:10% 90%;
-    grid-template-rows: 180px 400px 560px auto 600px 600px ;
-    grid-template-areas: 
-    "logo menu"
-    "imagenes imagenes"
-    "encabezado encabezado"
-    "noticias noticias"
-    "formulario formulario"
-    "footer footer";
-}
-.logotipo{
-    grid-area: logo;
-}
-.nav__principal{
-    grid-area: menu;
-}
-.scroll{
-    grid-area: imagenes;
-}
-.encabezado{
-    grid-area: encabezado;
-}
-.Noticias{
-    grid-area: noticias;
-}
-.formulario{
-    grid-area: formulario;
-}
-footer{
-    grid-area: footer;
-}
+
 /*SCROLL*/
 .scroll{
+    padding-top:200px;
     width:100%;
     margin:0;
     overflow: hidden;
@@ -92,6 +61,7 @@ header{
 }
 #logotipo{
     width:200px;
+    min-width: 200px;
 }
 .nav__principal{
     width: 100%;
