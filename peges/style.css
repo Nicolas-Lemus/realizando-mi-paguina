@@ -62,6 +62,15 @@ header{
 #logotipo{
     width: 100px;
     max-width: 100%;
+    animation: girar linear infinite 7s;
+}
+@keyframes girar{
+    from{
+        transform:rotateY(0deg)
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
 .nav__principal{
     width: 100%;
