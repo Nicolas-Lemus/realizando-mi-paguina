@@ -87,13 +87,15 @@ header{
     transition:0.6s;
     font-size: 12px;
 }
-/*MEDIA QUERIE*/ 
+.encabezado{
+    margin-bottom:100px;
+}
 .encabezado__articulo{
     text-align: center;
     justify-content: center;
 }
 .encabezado__titulo{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: gold;
 }
 .encabezado__complemento{
@@ -102,10 +104,10 @@ header{
     text-align: center;
     width: 100%;
 }
-.cards__title{
+#cards__title{
     font-size: 1rem;
     text-decoration: underline;
-    margin-top:150px;
+    margin:50px;
 }
 .cards__noticias{
     display: flex;
@@ -381,4 +383,47 @@ iframe{
     background: none;
     font-size: 2rem;
     color: rgb(196, 176, 63);
+}
+/*MEDIA QUERIE*/ 
+@media screen and (min-width :768px) {
+    #logotipo{
+        width: 200px;
+    }
+    #scroll{
+        padding-top: 220px;
+        height: 500px;
+    }
+    #scroll img{
+        height: 500px;
+    }
+    .nav__principal ul li{
+        font-size: 1.8rem;
+    }
+    .nav__principal ul li a:hover{
+        font-size:1.7rem;
+    }
+    .encabezado__articulo h1{
+        font-size:8rem;
+    }
+    .encabezado__articulo h2 ,.noticias #cards__title{
+        font-size: 3rem;
+    }
+    #formulario__h2{
+        font-size: 3rem;
+    }
+    .formulario label{
+        font-size: 1.8rem;
+    }
+    #footer #footer__h2{
+        font-size: 2.7rem;
+    }
+    #footer a img{
+        width: 60px;
+    }
+    .footer__nav #footer__nav__h2{
+        font-size: 2.2rem;
+    }
+    #footer a{
+        font-size: 1.5rem;
+    }
 }
