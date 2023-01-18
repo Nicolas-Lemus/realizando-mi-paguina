@@ -18,7 +18,7 @@ img{
 }
 /*SCROLL*/
 #scroll{
-    padding-top:200px;
+    padding-top:120px;
     width:100%;
     margin:0;
     overflow: hidden;
@@ -102,10 +102,6 @@ header{
     text-align: center;
     width: 100%;
 }
-.noticias{
-    margin:auto;
-    display:flexbox;
-}
 .cards__title{
     font-size: 1rem;
     text-decoration: underline;
@@ -154,12 +150,15 @@ header{
     max-height:300px;
 }
 .cards h4{
-    font-weight: 600;
-    font-size: 2rem;
+    padding:1rem;
+    font-size: 1.8rem;
 }
 .cards p{
-    padding:  2rem;
+    color: rgb(241, 208, 124);
+    padding: 1rem;
     font-size: 1.3rem;
+    background: rgb(19, 18, 18);
+    font-family: 'Courier New', Courier, monospace;
 }
 .cards:hover{
     box-shadow: 0px 0px 40px rgb(255, 238, 0);
@@ -292,23 +291,18 @@ header{
     background: none;
 }
 .title__galeria h1{
-    font-size: 4rem;
+    font-size: 3rem;
     background: none;
     display: flex;
     justify-content: center;
-    padding-top:470px;
+    padding-top:270px;
 }
 .title__galeria h2{
     background: none;
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin: 100px 0px;
     display: flex;
     justify-content: center; 
-}
-.title__galeria p{
-    font-size:1.5rem;
-    display: flex;
-    text-align: center;
 }
 .galeria{
     display: flex;
@@ -341,6 +335,7 @@ iframe{
     justify-content: center;
     background: none;
     margin: 40px;
+    height:400px;
 }
 /* CONTACTOS*/
 .contactanos{
