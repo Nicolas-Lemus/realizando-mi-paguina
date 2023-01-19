@@ -5,7 +5,11 @@
     text-decoration: none;
     color: rgb(209, 185, 46);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgba(0, 0, 0, 0.822);
+    background: rgba(5, 5, 5, 0.822)!important;
+    box-sizing: content-box;
+}
+input , textarea{
+    background: white !important;
 }
 section ,article ,div ,footer{
     background: none;
@@ -16,13 +20,61 @@ h1, h2, h3, h4, p ,div{
 img{
     max-width: 100%;
 }
-/*SCROLL*/
+.navbar-toggler-icon{
+    background: rgb(255, 255, 254) !important;
+}
+.navbar-toggler {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler, 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+.navbar-toggler-icon{
+    display: block;
+    position: absolute; 
+    height: 3px;
+    width: 100%;
+    background: red;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .30s ease-in-out;
+}
+.middle-bar{
+    margin-top: 0px;
+}
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform:rotate(135deg);
+}
+.navbar-toggler .middle-bar{
+    opacity:0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(-135deg);
+
+}
 #scroll{
     padding-top:120px;
     width:100%;
-    margin:0;
+    margin:0 !important;
     overflow: hidden;
-    height: 200px;
+    height: 250px;
 }
 #scroll ul{
     display:flex;
@@ -36,21 +88,21 @@ img{
 }
 #scroll  img{
     width: 100%;
-    height:200px;
-    background: black;
+    height:250px;
+    background: rgb(8, 8, 8);
 }
 @keyframes cambio {
     0% {margin-left: 0; }
     20%{ margin-left: 0; }
 
-    25%{margin-left: -105%;}
+    25%{margin-left: -100%;}
     45%{margin-left: -110%;}
 
-    50%{margin-left: -205%;}
-    70%{margin-left: -210%;}
+    50%{margin-left: -210%;}
+    70%{margin-left: -220%;}
 
-    75%{margin-left: -310%;}
-    100%{margin-left: -320%;}
+    75%{margin-left: -320%;}
+    100%{margin-left: -330%;}
 }
 header{
     position:fixed;
@@ -58,6 +110,7 @@ header{
     width:100%;
     display: flex;
     justify-content: space-around;
+    background: black !important;
 }
 #logotipo{
     width: 100px;
@@ -72,20 +125,18 @@ header{
         transform: rotateY(360deg);
     }
 }
-.nav__principal{
-    width: 100%;
-    background: rgb(0, 0, 0);
+.nav__principal {
+    background: rgb(0, 0, 0)!important;
+    align-items:flex-end;
 }
 .nav__principal ul{
-    display: flex;
     width:100%;
-    background: rgb(0, 0, 0);
-    justify-content:space-evenly;
+    justify-content:right;
 }
 .nav__principal ul li{
-    text-align: center;
     font-size:.8rem;
-    background:none;
+    margin: 10px;
+    height: 100%;
 }
 .nav__principal ul li a{
     color: rgb(161, 163, 57);
@@ -96,7 +147,7 @@ header{
     transition:0.6s;
 }
 .encabezado{
-    background: rgb(17, 17, 17);
+    background: rgb(7, 7, 7);
     margin-bottom:100px;
 }
 .encabezado__articulo{
@@ -171,7 +222,7 @@ header{
     color: rgb(241, 208, 124);
     padding: 1rem;
     font-size: 1.3rem;
-    background: rgb(19, 18, 18);
+    background: rgb(73, 73, 73) !important;
     font-family: 'Courier New', Courier, monospace;
 }
 .cards:hover{
@@ -197,7 +248,7 @@ header{
     margin: 50px;
 }
 .formulario input{
-    background: white;
+    background: rgb(247, 245, 245);
     height:25px;
     color: black;
 }
@@ -220,13 +271,13 @@ header{
 }
 #Enviar{
     color: rgb(253, 251, 251);
-    background: rgb(6, 173, 196);
+    background: rgb(6, 173, 196) !important;
     padding:auto;
     font-size: 1rem;
     margin:50px;
     width:90px;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 #Enviar:hover{
     background:rgb(3, 218, 247);
@@ -397,7 +448,7 @@ iframe{
     color: rgb(196, 176, 63);
 }
 /*MEDIA QUERIE*/ 
-@media screen and (min-width :768px) {
+@media screen and (min-width :992px) {
     #logotipo{
         width: 200px;
     }
