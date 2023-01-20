@@ -12,13 +12,12 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="multimedia/Imagenes/logo.jpg" alt="logo_pagina" id="logotipo"></a>
+        <a id="div__logotipo" href="index.html"><img src="multimedia/Imagenes/logo.jpg" alt="logo_pagina" id="logotipo"></a>
         <nav class="navbar navbar-expand-lg bg-body-tertiary nav__principal">
             <div class="container-fluid">
-            <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around color__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon top-bar"></span>
-                <span class="navbar-toggler-icon top-bar"></span>
-                <span class="navbar-toggler-icon top-bar"></span>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="multimedia/Logos/barras.png" alt="menu" width="30px"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -51,47 +50,78 @@
         </ul>
     </div>
     <section class="encabezado">
-        <p class="button__arriba"><a href="#footer">ir a Redes</a></p>
+        <button type="button" class="btn btn-warning button__arriba"><a href="#footer">Ir redes</a></button>
         <article class="encabezado__articulo wow animate__animated animate__slideInDown">
             <h1 class="encabezado__titulo">Club Atletico Peñarol</h1>
             <h2 class="encabezado__complemento">Bienvenidos a la mayor comunidad deportiva de Uruguay</h2>
         </article>    
-    </section>
-        <section class="noticias">
-            <h2 id="cards__title">Noticias:</h2>
-                <div class="cards__noticias">
-                    <div class="cards">
-                        <img src="multimedia/Imagenes/bascketball.jpg" alt="basquet" title="Bascketball">
-                        <h4>Seleccion de bascketball</h4>
-                        <p>Volvieron las formativas.Siguiendo los protocolos sanitarios establecidos,<br> las formativas de Básquetbol de Peñarol retomaron las actividades.</p>
-                    </div>
-                    <div class="cards">
-                        <img src="multimedia/Imagenes/femenino.jpg" alt="foto_femenino" title="Futbol femenino">
-                        <h4>Futbol Femenino</h4>
-                        <p>Gran goleada Carbonera en el Franzini!.En el Estadio Luis Franzini, fue victoria de las Carboneras 6-2 <br> frente a Defensor Sporting por la fecha 6 del Torneo Clausura.</p>
-                    </div>
-                    <div class="cards">
-                        <img src="multimedia/Imagenes/VOLEYBALL.jpeg" alt="foto_femenino" title="Voleyball">
-                        <h4>Voleyball</h4>
-                        <p>Los Carboneros lograron victorias en Mayores, <br> U18 y U20 con saldo altamente positivo tanto en la rama masculina como en la femenina.</p>
-                    </div>
-                    <div class="cards">
-                        <img src="multimedia/Imagenes/hanball.jpeg" alt="hanball_femenino" title="Plantel femenino">
-                        <h4>Campeón Copa de Plata en Handball</h4>
-                        <p>Las Carboneras derrotaron a Malvín en la final y <br> conquistaron el título de la Copa de Plata de la Federación Uruguaya de Handball.</p>
-                    </div>
-                    <div class="cards">
-                        <img src="multimedia/Imagenes/contarto.jpeg" alt="Thiago" title="Thiago Cardozo">
-                        <h4>Nuevo integrante</h4>
-                        <p>Thiago Cardozo firmó su nuevo contrato con nuestra institución </p>
-                    </div>
-                    <div class="cards">
-                        <img src="multimedia/Imagenes/RIVAL.jpeg" alt="Peñarol-River" title="Peñarol-River">
-                        <h4>Primer rival</h4>
-                        <p>Nuestro rival en la Primera Fase de Copa Conmebol Sudamericana será<br>  River Plate</p>
-                    </div>
+    </section> 
+    <section class="noticias">
+        <div class=" card-group">
+            <div class="card">
+                <img src="multimedia/Imagenes/bascketball.jpg"class="card-img-top" alt="basquet" title="Bascketball">
+                <div class="card-body">
+                    <h5 class="card-title">Bascketball</h5>
+                    <p class="card-text">La seleccion de bascketball vencio 79 a 88 el miercoles frente a Aguada</p>
                 </div>
-        </section>
+            <div class="card-footer">
+                <small class="text-muted">Publicado hace 25 min</small>
+            </div>
+            </div>
+            <div class="card">
+                <img src="multimedia/Imagenes/femenino.jpg" class="card-img-top" alt="foto_femenino">
+                <div class="card-body">
+                    <h5 class="card-title">Futbol</h5>
+                    <p class="card-text">En el Estadio Luis Franzini, fue victoria <br> frente a Defensor Sporting por el Torneo Clausura.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Publicado hace 30 minutos</small>
+            </div>
+            </div>
+            <div class="card">
+                <img src="multimedia/Imagenes/VOLEYBALL.jpeg" class="card-img-top" alt="Voleyball">
+            <div class="card-body">
+                <h5 class="card-title">Voleyball</h5>
+                <p class="card-text">Los Carboneros lograron victorias en Mayores, <br> tanto en la rama masculina como en la femenina.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Publicado hace 1 hora</small>
+            </div>
+            </div>
+        </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="multimedia/Imagenes/hanball.jpeg" class="card-img-top" alt="Plantel femenino">
+        <div class="card-body">
+            <h5 class="card-title">Handball</h5>
+            <p class="card-text">Las Carboneras derrotaron a Malvín en la final y <br> conquistaron el título de la Copa de Plata.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Publicado hace 2 horas</small>
+        </div>
+        </div>
+        <div class="card">
+            <img src="multimedia/Imagenes/contarto.jpeg" class="card-img-top" alt="Thiago">
+        <div class="card-body">
+            <h5 class="card-title">Nuevo integrante</h5>
+            <p class="card-text">Thiago Cardozo firmó su nuevo contrato con nuestra institución </p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Publicado hace 6 horas</small>
+        </div>
+        </div>
+        <div class="card">
+            <img src="multimedia/Imagenes/RIVAL.jpeg" class="card-img-top" alt="Peñarol-River">
+        <div class="card-body">
+            <h5 class="card-title">Primer rival</h5>
+            <p class="card-text">Nuestro rival en la Primera Fase de Copa Conmebol Sudamericana será<br>  River Plate</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Publicado hace 3 dias</small>
+        </div>
+        </div>
+    </div>
+</section>
 <section class="formulario">
     <h2 id="formulario__h2">Contactanos</h2>
         <form action="">
@@ -108,18 +138,19 @@
                 <textarea name="textarea" value="enviar" id="textarea" cols="20" rows="8" placeholder="Dejanos tu mensaje..." required></textarea>
             </div>
             <div>    
-                <input type="submit" value="Enviar" id="Enviar">
+                <input class="btn btn-primary" type="submit" value="Enviar" id="Enviar">
             </div>
         </form>
 </section>
 <footer id="footer">
     <div class="button">
-        <p class="button__inicio"><a href="#scroll">Ir al inicio</a></p>
+        <button type="button" class="btn btn-warning button__arriba"><a href="#scroll">Ir al Inicio</a></button>
     </div>
     <h2 id="footer__h2">Visitanos en nuestras redes</h2>
-        <a href="https://www.youtube.com/@futbolalopenarol3505"><img src="multimedia/Logos/youtube_icono.png" alt="logo-youtube" title="Youtube"></a>
-        <a href="https://www.instagram.com/oficialcap/?hl=es-la"><img src="multimedia/Logos/icono-instagram.png" alt="Logo-instagram" title="Instagram"></a>
-        <a href="https://es-la.facebook.com/OficialCAP/"><img src="multimedia/Logos/facebook-icon.png" alt="logo-facebook" title="Facebook"></a>
+        <a href=""><img src="multimedia/Logos/gorjeo.png" alt="twiter-logo" title="Twitter"></a>
+        <a href="https://www.youtube.com/@futbolalopenarol3505"><img src="multimedia/Logos/youtube.png" alt="logo-youtube" title="Youtube"></a>
+        <a href="https://www.instagram.com/oficialcap/?hl=es-la"><img src="multimedia/Logos/instagram.png" alt="Logo-instagram" title="Instagram"></a>
+        <a href="https://es-la.facebook.com/OficialCAP/"><img src="multimedia/Logos/facebook.png" alt="logo-facebook" title="Facebook"></a>
             <nav class="footer__nav">
                 <h2 id="footer__nav__h2">Menu de navegacion:</h2>
                     <ul>
@@ -133,6 +164,11 @@
                 <h3>La historia continua...</h3>
                 <p>¡1891-2022!</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
 </body>
 </html>

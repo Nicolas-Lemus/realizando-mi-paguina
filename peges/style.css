@@ -1,73 +1,15 @@
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     list-style: none;
     text-decoration: none;
     color: rgb(209, 185, 46);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgba(5, 5, 5, 0.822)!important;
+    background: rgba(7, 7, 7, 0.822)!important;
     box-sizing: content-box;
 }
 input , textarea{
     background: white !important;
-}
-section ,article ,div ,footer{
-    background: none;
-}
-h1, h2, h3, h4, p ,div{
-    background: none;
-}
-img{
-    max-width: 100%;
-}
-.navbar-toggler-icon{
-    background: rgb(255, 255, 254) !important;
-}
-.navbar-toggler {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    transition: .5s ease-in-out;
-}
-.navbar-toggler, 
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-    border: 0;
-}
-.navbar-toggler span {
-    margin: 0;
-    padding: 0;
-}
-.navbar-toggler-icon{
-    display: block;
-    position: absolute; 
-    height: 3px;
-    width: 100%;
-    background: red;
-    border-radius: 1px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .30s ease-in-out;
-}
-.middle-bar{
-    margin-top: 0px;
-}
-.navbar-toggler .top-bar{
-    margin-top: 0px;
-    transform:rotate(135deg);
-}
-.navbar-toggler .middle-bar{
-    opacity:0;
-    filter: alpha(opacity=0);
-}
-.navbar-toggler .top-bar{
-    margin-top: 0px;
-    transform: rotate(-135deg);
-
 }
 #scroll{
     padding-top:120px;
@@ -110,9 +52,13 @@ header{
     width:100%;
     display: flex;
     justify-content: space-around;
-    background: black !important;
+    background: rgb(0, 0, 0) !important;
+}
+#div__logotipo{
+    background: none !important;
 }
 #logotipo{
+    border-radius: 50%;
     width: 100px;
     max-width: 100%;
     animation: girar linear infinite 7s;
@@ -156,7 +102,7 @@ header{
 }
 .encabezado__titulo{
     padding-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: rgb(231, 199, 18);
 }
 .encabezado__complemento{
@@ -172,63 +118,47 @@ header{
     text-decoration: underline;
     margin:50px;
 }
-.cards__noticias{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top:100px;
-    width: 100%;
-    max-width: 100%;
-}
 .button__arriba{
     display: inline-block;
-    background: rgb(12, 12, 12);
+    background: rgb(192, 169, 68) !important;
     margin:80px 20px;
 }
 .button__arriba a{
-    color: black;
-    background: gold;
-    font-size: 1rem;
+    color: rgb(15, 15, 15);
+    background: rgb(192, 169, 68) !important;
+    font-size: 0.9rem !important;
+    text-decoration: none;
 }
-.button__arriba a:hover{
-    background: rgb(245, 219, 74);
-    box-shadow: 0px 0px 10px gold;
-    transition: 0.5s;
-}
-.cards{
-    border: solid 1px;
-    width:500px;
-    height:565px;
-    overflow: hidden;
+.card{
     text-align: center;
-    box-shadow: 0px 0px 20px rgb(255, 238, 0);
-    margin:10px;
-}
-.cards img{ 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    margin:10px;
+    border: solid 1px;
+    box-shadow: 0px 0px 20px rgb(255, 238, 0);
+}
+.card img{
+    width:500px;
     max-width: 100%;
-    margin:auto;
-    width: 450px;
-    max-height:300px;
+    max-height: 350px;
+    height:100%
 }
-.cards h4{
-    padding:1rem;
-    font-size: 1.8rem;
+.card h5{
+    font-size: 1.5rem;
 }
-.cards p{
+.card p{
     color: rgb(241, 208, 124);
-    padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     background: rgb(73, 73, 73) !important;
     font-family: 'Courier New', Courier, monospace;
 }
-.cards:hover{
+.card:hover{
     box-shadow: 0px 0px 40px rgb(255, 238, 0);
     transition: 1s;
     cursor: pointer;
+}
+.text-muted {
+    color: rgb(197, 191, 140) !important;
 }
 .formulario{
     height: 100%;
@@ -271,40 +201,18 @@ header{
 }
 #Enviar{
     color: rgb(253, 251, 251);
-    background: rgb(6, 173, 196) !important;
+    background: rgb(6, 173, 196) !important ;
     padding:auto;
     font-size: 1rem;
     margin:50px;
     width:90px;
-    height: 50px;
-    border-radius: 10px;
+    height: 30px;
 }
 #Enviar:hover{
-    background:rgb(3, 218, 247);
+    background:rgb(3, 218, 247) !important;
     cursor: pointer;
     color: rgb(255, 254, 254);
     transition: .7s;
-}
-.button{
-    display:inline-block;
-    background: rgb(245, 209, 4);
-
-}
-.button{
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-}
-.button__inicio a{
-    color: black;
-    background: rgb(250, 212, 0);
-    font-size: 1.3rem;
-    padding: auto;
-}
-.button__inicio a:hover{
-    background: rgb(245, 219, 74);
-    box-shadow: 0px 0px 10px gold;
-    transition: 0.5s;
 }
 #footer{
     width: 100%;
@@ -324,10 +232,6 @@ header{
     margin:10px;
     background:none;
 }
-#footer img:hover{
-    background:rgb(185, 168, 71);
-    transition: 0.6s;
-}
 #footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -341,15 +245,13 @@ header{
     margin: 1rem;
 }
 .footer__nav ul li a{
+    text-decoration: none;
     color: rgb(199, 180, 86);
     font-size: 1.1rem;
 }
 .footer__nav ul li a:hover{
-    background: rgba(41, 41, 40, 0.623);
-    color: rgb(230, 201, 41);
+    color: rgb(235, 203, 23);
     transition: 0.5s;
-    box-shadow: 0px 0px 10px ,0px 0px 5px inset;
-    border-radius: 10%;
 }
 /*GALERIA*/
 .title__galeria{
@@ -448,6 +350,15 @@ iframe{
     color: rgb(196, 176, 63);
 }
 /*MEDIA QUERIE*/ 
+@media screen and (min-width :576px) {
+    .card img{
+        width:250px;
+        height: 200px;
+    }
+    .encabezado__titulo{
+        font-size: 5rem;
+    }
+}
 @media screen and (min-width :992px) {
     #logotipo{
         width: 200px;
@@ -485,5 +396,15 @@ iframe{
     }
     #footer a{
         font-size: 1.5rem;
+    } 
+    .card h5{
+        font-size: 1.5;
+    }
+    .card p{
+        font-size: 1.2rem;
+    }
+    .card img{
+        width: 500px;
+        height: 400px;
     }
 }
