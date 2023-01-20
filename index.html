@@ -20,7 +20,7 @@
                 <span class="navbar-toggler-icon"><img src="multimedia/Logos/barras.png" alt="menu" width="30px"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav wow animate__animated animate__headShake">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                 </li>
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="peges/contacto.html">Contactanos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="peges/palmares.html">Palamres</a>
+                    <a class="nav-link" href="peges/palmares.html">Palmares</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="peges/informacion.html">Informacion</a>
@@ -51,7 +51,7 @@
     </div>
     <section class="encabezado">
         <button type="button" class="btn btn-warning button__arriba"><a href="#footer">Ir redes</a></button>
-        <article class="encabezado__articulo wow animate__animated animate__slideInDown">
+        <article class="encabezado__articulo wow animate__animated animate__zoomIn">
             <h1 class="encabezado__titulo">Club Atletico Peñarol</h1>
             <h2 class="encabezado__complemento">Bienvenidos a la mayor comunidad deportiva de Uruguay</h2>
         </article>    
@@ -122,23 +122,23 @@
         </div>
     </div>
 </section>
-<section class="formulario">
-    <h2 id="formulario__h2">Contactanos</h2>
+<section class="formulario container">
+    <h2 id="formulario__h2" class="wow animate__animated animate__bounceInRight">Contactanos</h2>
         <form action="">
-            <div class="formulario__nombre">
+            <div class="formulario__nombre wow animate__animated animate__fadeInLeft">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="" placeholder="Nombre" id="nombre" required>
             </div>
-            <div class="formulario__correo">
+            <div class="formulario__correo wow animate__animated animate__bounceInRight ">
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" placeholder="Ingresar correo" required>
             </div>
-            <div class="formulario__mensaje">
+            <div class="formulario__mensaje wow animate__animated animate__fadeInLeft">
                 <label for="textarea" id="mensaje">Mensaje</label>
                 <textarea name="textarea" value="enviar" id="textarea" cols="20" rows="8" placeholder="Dejanos tu mensaje..." required></textarea>
             </div>
             <div>    
-                <input class="btn btn-primary" type="submit" value="Enviar" id="Enviar">
+                <input class="btn btn-primary wow animate__animated animate__bounceInRight" type="submit" value="Enviar" id="Enviar">
             </div>
         </form>
 </section>
@@ -147,7 +147,7 @@
         <button type="button" class="btn btn-warning button__arriba"><a href="#scroll">Ir al Inicio</a></button>
     </div>
     <h2 id="footer__h2">Visitanos en nuestras redes</h2>
-        <a href=""><img src="multimedia/Logos/gorjeo.png" alt="twiter-logo" title="Twitter"></a>
+        <a href="https://twitter.com/OficialCAP"><img src="multimedia/Logos/gorjeo.png" alt="twiter-logo" title="Twitter"></a>
         <a href="https://www.youtube.com/@futbolalopenarol3505"><img src="multimedia/Logos/youtube.png" alt="logo-youtube" title="Youtube"></a>
         <a href="https://www.instagram.com/oficialcap/?hl=es-la"><img src="multimedia/Logos/instagram.png" alt="Logo-instagram" title="Instagram"></a>
         <a href="https://es-la.facebook.com/OficialCAP/"><img src="multimedia/Logos/facebook.png" alt="logo-facebook" title="Facebook"></a>
@@ -164,11 +164,10 @@
                 <h3>La historia continua...</h3>
                 <p>¡1891-2022!</p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 </html>
