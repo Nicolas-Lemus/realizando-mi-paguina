@@ -387,6 +387,13 @@ iframe{
         display: grid;
         grid-template-columns:repeat(2,50%);
     }
+    #scroll{
+        padding-top: 220px;
+        height: 350px;
+    }
+    #scroll img{
+        height: 350px;
+    }
 }
 @media screen and (min-width :992px) {
     #logotipo{
