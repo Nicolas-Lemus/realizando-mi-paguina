@@ -1,6 +1,6 @@
 *{
     margin:0;
-    padding-left:0 !important;
+    padding:0 !important;
     list-style: none;
     text-decoration: none;
     color: rgb(209, 185, 46);
@@ -12,7 +12,7 @@ input , textarea{
     background: rgba(243, 243, 236, 0.979) !important;
 }
 #scroll{
-    padding-top:120px;
+    padding-top:120px !important;
     width:100%;
     margin:0 !important;
     overflow: hidden;
@@ -47,12 +47,15 @@ input , textarea{
     100%{margin-left: -330%;}
 }
 header{
+    display: flex;
+    justify-content: space-around;
     position:fixed;
     z-index: 1;
     width:100%;
-    display: flex;
-    justify-content: space-around;
-    background: rgb(0, 0, 0) !important;
+    background: rgb(0, 0 , 0) !important;
+}
+#navbarNav ul li a{
+    font-family: 'Seymour One', sans-serif;
 }
 #div__logotipo{
     background: none !important;
@@ -61,7 +64,7 @@ header{
     border-radius: 50%;
     width: 100px;
     max-width: 100%;
-    animation: girar linear infinite 7s;
+    animation: girar linear infinite 10s;
 }
 @keyframes girar{
     from{
@@ -73,19 +76,32 @@ header{
 }
 .nav__principal {
     background: rgb(0, 0, 0)!important;
-    align-items:flex-end;
 }
 .nav__principal ul{
+    background: rgba(0, 0, 0, 0.911)!important;
     width:100%;
-    justify-content:right;
+    gap: 25px;
 }
 .nav__principal ul li{
+    background: rgba(0, 0, 0, 0.911) !important;
     font-size:.8rem;
     margin: 10px;
     height: 100%;
 }
-.nav__principal ul li a{
-    color: rgb(161, 163, 57);
+.nav__principal ul li a{  
+    font-size: 1rem;
+    text-align: center;
+    background: none !important;
+    color: rgb(166, 168, 41);
+    text-decoration: none !important;
+    background-image:linear-gradient(rgb(51, 40, 40) , rgb(238, 255, 7))!important;
+    background-position: 0% 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 1px !important;
+    transition: background-size .6s !important;
+}
+.nav__principal ul li a:hover, a:focus {
+    background-size: 100% 2px !important;
 }
 .nav__principal ul li a:hover{
     color:rgb(247, 243, 6);
@@ -136,7 +152,7 @@ header{
     text-align: center;
     display: flex;
     align-items: center;
-    margin:10px;
+    margin:30px !important;
     border: solid 1px;
     box-shadow: 0px 0px 20px rgb(255, 238, 0);
 }
@@ -144,7 +160,7 @@ header{
     width:500px;
     max-width: 100%;
     max-height: 350px;
-    height:100%
+    height:100% !important;
 }
 .card h5{
     color: rgb(235, 180, 31);
@@ -271,10 +287,10 @@ header{
     background: none;
     display: flex;
     justify-content: center;
-    padding-top:270px;
+    padding-top:270px !important;
 }
 .title__galeria h2{
-    background: none;
+    background:rgb(22, 21, 21) !important;
     font-size: 1.6rem;
     margin: 100px 0px;
     display: flex;
@@ -290,10 +306,9 @@ header{
 }
 .galeria img{
     width:500px;
-    margin:30px;
+    margin:10px;
     max-width: 100%;
     max-height: 350px;
-    height:100%;
 }
 .galeria img:hover{
     box-shadow: 0px 0px 30px;
@@ -317,6 +332,7 @@ iframe{
     padding-top:470px;
 }
 .contactanos__title{
+    padding-top:420px !important ;
     font-size: 4rem;
     display: flex;
     justify-content: center;
@@ -358,12 +374,18 @@ iframe{
 }
 /*MEDIA QUERIE*/ 
 @media screen and (min-width :576px) {
-    .card img{
-        width:250px;
-        height: 200px;
-    }
     .encabezado__titulo{
         font-size: 5rem;
+    }
+    .title__galeria h1{
+        font-size: 5rem;
+    }
+    .title__galeria h2{
+        font-size: 2.6rem;
+    }
+    .card-group{
+        display: grid;
+        grid-template-columns:repeat(2,50%);
     }
 }
 @media screen and (min-width :992px) {
@@ -410,8 +432,14 @@ iframe{
     .card p{
         font-size: 1.2rem;
     }
-    .card img{
-        width: 500px;
-        height: 400px;
+    .title__galeria h1{
+        font-size: 8rem;
+    }
+    .title__galeria h2{
+    font-size: 5rem;
+    }
+    .card-group{
+        display: grid;
+        grid-template-columns:repeat(3,33%);
     }
 }
